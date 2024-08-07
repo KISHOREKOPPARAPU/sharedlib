@@ -1,0 +1,20 @@
+pipeline {
+  agent any
+  stages {
+    stage("checkout") {
+      steps {
+         echo " sample pipline"
+      }
+}
+   stage ("build") {
+   steps {
+     echo " deployment pipline"
+ }
+}
+    stage ("deploy") {
+    steps {
+      echo "cicd pipline"
+  }
+}
+}
+}
